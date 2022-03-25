@@ -1,1 +1,2 @@
-# Python_misc_2
+# Python Code Snippets
+Loops, functions and in-built functions

@@ -105,3 +105,44 @@ del a[:]
 a
 del a
 a
+
+#tuples and sequences
+# A tuple consists of a number of  values separated by  commas.
+v = 12345, 54321, 'hello!'
+v[0]
+v[2]
+type(v)
+v
+
+#nested tuples
+u = v, (1, 2, 3, 4, 5)
+type(u)
+u
+
+#immutable tuples
+u[0][1]
+u[1][3]
+u[0][1] = 56789
+
+#tuples can contain mutable objects
+s = ([1, 2, 3], [4, 5,6])
+type(s)
+s[0][1] = 3
+s[1][2] = 7
+s
+
+x = () #empty tuple
+type(x)
+y = 'world!',
+type(y)
+len(x)
+len(y)
+
+#sequence unpacking
+v
+x, y, z = v
+x
+y
+z
+type(x)
+type(z)

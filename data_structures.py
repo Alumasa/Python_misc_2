@@ -131,6 +131,21 @@ s[0][1] = 3
 s[1][2] = 7
 s
 
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+
+text = ('Put several strings within parentheses '
+        'to have them joined together.')
+print(text)
+text
+
+word = 'Python'
+word[0:2]
+word[2:5]
+
 x = () #empty tuple
 type(x)
 y = 'world!',
@@ -146,3 +161,26 @@ y
 z
 type(x)
 type(z)
+
+word[-0] == word[0]
+word[-1]
+word[-2]
+
+word[:2]
+word[4:]
+word[-2]
+#the start is always included, the end is always excluded
+word[:2] + word[2:]
+word[:4] + word[4:]
+
+word[4:]
+word[4:44]
+word[44:]
+
+#python strings are immutable
+word[0]
+word[0] = "J"
+
+"J" + word[1:]
+
+word[:2] + 'py'

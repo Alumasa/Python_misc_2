@@ -1,2 +1,1 @@
-# Python Code Snippets
-Loops, functions and in-built functions
+This branch is a Python branch for Vanessa
